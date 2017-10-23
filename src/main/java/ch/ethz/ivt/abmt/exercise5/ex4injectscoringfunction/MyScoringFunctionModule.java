@@ -8,6 +8,6 @@ import org.matsim.core.controler.AbstractModule;
  */
 public class MyScoringFunctionModule extends AbstractModule {
 	public void install() {
-		bindScoringFunctionFactory().to( MyScoringFunctionFactory.class );
+		bindScoringFunctionFactory().to( MyParameterizedScoringFunctionFactory.class );
 	}
 }

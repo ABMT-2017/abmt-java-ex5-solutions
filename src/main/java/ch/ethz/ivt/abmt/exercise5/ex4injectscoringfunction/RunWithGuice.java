@@ -9,7 +9,8 @@ import org.matsim.core.controler.Controler;
  */
 public class RunWithGuice {
 	public static void main( String[] args ) {
-		String configFile = args[ 0 ];
+		//String configFile = args[ 0 ];
+		String configFile = "input/siouxfalls-2014/config_default.xml";
 
 		Config config = ConfigUtils.loadConfig( configFile );
 		Controler controler = new Controler( config );

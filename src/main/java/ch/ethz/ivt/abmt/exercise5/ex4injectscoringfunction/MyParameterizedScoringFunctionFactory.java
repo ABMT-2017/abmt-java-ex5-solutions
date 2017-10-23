@@ -13,11 +13,11 @@ public class MyParameterizedScoringFunctionFactory implements ScoringFunctionFac
 	private final Scenario scenario;
 
 	@Inject
-	public MyParameterizedScoringFunctionFactory( final Scenario scenario ) {
+	public MyParameterizedScoringFunctionFactory( Scenario scenario ) {
 		this.scenario = scenario;
 	}
 
-	public ScoringFunction createNewScoringFunction( final Person person ) {
-		return new MyParameterizedScoringFunction( scenario );
+	public ScoringFunction createNewScoringFunction( Person person ) {
+		return new MyParameterizedScoringFunction( scenario , person );
 	}
 }
